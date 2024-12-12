@@ -14,7 +14,7 @@ X2Paddle is a model conversion tool under the PaddlePaddle ecosystem, dedicated 
 
 - **Supports major deep learning frameworks**
 
-  - It has supported the conversion on inference models of **Caffe/TensorFlow/ONNX/PyTorch** and the conversion of PyTorch training projects, which covers the major deep learning frameworks in the market at present. For further details, refer to ***[test demo ](./test_benchmark)***
+  - It has supported the conversion on inference models of **Caffe/TensorFlow/ONNX/PyTorch** and the conversion of PyTorch training projects, which covers the major deep learning frameworks in the market at present. For further details, refer to ***[support model zoo list](./docs/introduction/x2paddle_model_zoo.md)*** and ***[test demo ](./test_benchmark)***
 
 - **Rich set of supported models**
 

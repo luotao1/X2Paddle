@@ -16,7 +16,7 @@ X2Paddle是飞桨生态下的模型转换工具，致力于帮助其它深度学
 
 - **支持主流深度学习框架**
 
-  - 目前已经支持Caffe/TensorFlow/ONNX/PyTorch四大框架的预测模型的转换，PyTorch训练项目的转换，涵盖了目前市面主流深度学习框架，详见 ***[测试 demo ](./test_benchmark)***
+  - 目前已经支持Caffe/TensorFlow/ONNX/PyTorch四大框架的预测模型的转换，PyTorch训练项目的转换，涵盖了目前市面主流深度学习框架，详见 ***[支持模型列表](./docs/introduction/x2paddle_model_zoo.md)*** 和 ***[测试 demo ](./test_benchmark)***
 
 - **支持的模型丰富**
 

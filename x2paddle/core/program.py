@@ -522,6 +522,8 @@ class PaddleGraph(object):
                 else:
                     line = ','.join(layer.outputs)
                 line += " = {}(".format(layer.kernel)
+                if layer.kernel == "paddle.einsum":
+                    line += "\"" + layer.attrs["equation"] + "\", "
                 if isinstance(layer.inputs, dict):
                     for k, v in layer.inputs.items():
                         if isinstance(v, list):
@@ -536,8 +538,9 @@ class PaddleGraph(object):
                 else:
                     line += "{}".format(", ".join(layer.inputs))
 
-                for k, v in layer.attrs.items():
-                    line += "{}={}, ".format(k, v)
+                if layer.kernel != "paddle.einsum":
+                    for k, v in layer.attrs.items():
+                        line += "{}={}, ".format(k, v)
                 line = line.strip(", ")
                 line += ")"
                 if layer.kernel == "self.create_parameter":
